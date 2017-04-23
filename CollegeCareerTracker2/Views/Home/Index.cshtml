@@ -1,0 +1,1869 @@
+﻿@{
+    ViewBag.Title = "Career.care";
+}
+
+@*<link href="~/Content/Site.css" rel="stylesheet" />*@
+<link href="~/Content/Site.css" rel="stylesheet" type="text/css" media="screen" runat="server" />
+
+<section class="mainContainer">
+    <div id="frontPageOverlay">
+        <div id="logoContainer" class="flexDiv">
+            <img id="logo" src="~/Content/images/cctlogo2.png" alt="logo" />
+
+            <div class="displayInline">
+                <h1><span class="collegeFont">Career.</span><span class="careerFont">care</span></h1>
+                <h2>Stay On Track for a Brighter Future</h2>
+            </div>
+        </div>
+
+
+        <div id="box">
+            <div id="parentStudentBox">
+                <h3>Let's get started. Choose an Option.</h3>
+                <div class="column">
+                    <h4>I'm a parent</h4>
+                    <p>I want to help guide my child toward a great future.</p>
+                    <button class="standardButton" id="parentStartBtn">Start now</button>
+                </div>
+                <div class="column">
+                    <h4 class="studentColor">I'm a student</h4>
+                    <p>I want to find the best college and career for me.</p>
+                    <button class="standardButton" id="studentStartBtn">Let's go</button>
+                </div>
+            </div>
+
+            <!--======================parent questions=========================-->
+
+            <div id="parentQuestion1" class="parentQuestions">
+                <h2>Which product features will be most important to you?</h2>
+                <div class="borderBox">
+                    <div class="questionProgress pull-right">1st of 8</div>
+                    <h5>Career Advancement Rewards Program</h5>
+                    <p>Motivate your child with redeemable points for:</p>
+                    <div class="flexDiv">
+                        <div class="column">
+                            <p>Accomplished activities</p>
+                            <p>Reached milestones</p>
+                            <p>College/Career-bound advancements</p>
+                        </div>
+                        <div class="column radioButtonsColumn">
+                            <span>
+                                <label for="careerRewards1">
+                                    <p>
+                                        Not important
+                                        <div class="radioBox"><input id="careerRewards1" type="radio" value="1" name="CareerRewards"></div>
+
+                                    </p>
+                                </label>
+                            </span>
+                            <span>
+                                <label for="careerRewards2">
+                                    <p>
+                                        Not sure
+                                        <div class="radioBox"><input id="careerRewards2" type="radio" value="2" name="CareerRewards"></div>
+
+                                    </p>
+                                </label>
+                            </span>
+                            <span>
+                                <label for="careerRewards3">
+                                    <p>
+                                        Important
+                                        <div class="radioBox"><input id="careerRewards3" type="radio" value="3" name="CareerRewards"></div>
+
+                                    </p>
+                                </label>
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="backNextButtonsWrapper flexDiv">
+                    <div class="column">
+                        <div class="goBackBtn">Go back</div>
+                    </div>
+                    <div class="column">
+                        <div class="nextBtn">Next</div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div id="parentQuestion2" class="parentQuestions">
+                <h2 class="">Which product features will be most important to you?</h2>
+                <div class="borderBox">
+                    <div class="questionProgress pull-right">2nd of 8</div>
+                    <h5>Career Exploration</h5>
+                    <p>Browse careers by:</p>
+                    <div class="flexDiv">
+                        <div class="column">
+                            <p>Interests</p>
+                            <p>Personality traits</p>
+                            <p>Salary</p>
+                            <p>Educational requirements</p>
+                        </div>
+                        <div class="column radioButtonsColumn">
+                            <span>
+                                <label for="careerExp1">
+                                    <p>
+                                        Not important
+                                        <div class="radioBox"><input id="careerExp1" type="radio" value="1" name="CareerExploration"></div>
+
+                                    </p>
+                                </label>
+                            </span>
+                            <span>
+                                <label for="careerExp2">
+                                    <p>
+                                        Not sure
+                                        <div class="radioBox">
+                                            <input id="careerExp2" type="radio" value="2" name="CareerExploration">
+                                        </div>
+
+                                    </p>
+                                </label>
+                            </span>
+                            <span>
+                                <label for="careerExp3">
+                                    <p>
+                                        Important
+                                        <div class="radioBox"><input id="careerExp3" type="radio" value="3" name="CareerExploration"></div>
+
+                                    </p>
+                                </label>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="backNextButtonsWrapper flexDiv">
+                    <div class="column">
+                        <div class="goBackBtn">Go back</div>
+                    </div>
+                    <div class="column">
+                        <div class="nextBtn">Next</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="parentQuestion3" class="parentQuestions">
+                <h2 class="">Which product features will be most important to you?</h2>
+                <div class="borderBox">
+                    <div class="questionProgress pull-right">3rd of 8</div>
+                    <h5>Career Road Map Development</h5>
+                    <p>Forecast financial aspects of each career path by:</p>
+                    <div class="flexDiv">
+                        <div class="column">
+                            <p>Salary expectations</p>
+                            <p>Tuition costs</p>
+                            <p>Living expenses</p>
+                            <p>Time commitment</p>
+                        </div>
+                        <div class="column radioButtonsColumn">
+                            <span>
+                                <label for="careerRoad1">
+                                    <p>
+                                        Not important
+                                        <div class="radioBox">
+                                            <input id="careerRoad1" type="radio" value="1" name="CareerRoadMapDevelopment">
+                                        </div>
+
+                                    </p>
+                                </label>
+                            </span>
+                            <span>
+                                <label for="careerRoad2">
+                                    <p>
+                                        Not sure
+                                        <div class="radioBox"><input id="careerRoad2" type="radio" value="2" name="CareerRoadMapDevelopment"></div>
+
+                                    </p>
+                                </label>
+                            </span>
+                            <span>
+                                <label for="careerRoad3">
+                                    <p>
+                                        Important
+                                        <div class="radioBox"><input id="careeRoad3" type="radio" value="3" name="CareerRoadMapDevelopment"></div>
+
+                                    </p>
+                                </label>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="backNextButtonsWrapper flexDiv">
+                    <div class="column">
+                        <div class="goBackBtn">Go back</div>
+                    </div>
+                    <div class="column">
+                        <div class="nextBtn">Next</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="parentQuestion4" class="parentQuestions">
+                <h2 class="">Which product features will be most important to you?</h2>
+                <div class="borderBox">
+                    <div class="questionProgress pull-right">4th of 8</div>
+                    <h5>Student Achievements Archive</h5>
+                    <p>Store your child's:</p>
+                    <div class="flexDiv">
+                        <div class="column">
+                            <p>Activities</p>
+                            <p>Aptitudes</p>
+                            <p>Interests</p>
+                            <p>Deadlines</p>
+                            <p>Milestones</p>
+                        </div>
+                        <div class="column radioButtonsColumn">
+                            <span>
+                                <label for="studentAchievements1">
+                                    <p>
+                                        Not important
+                                        <div class="radioBox"><input id="studentAchievements1" type="radio" value="1" name="StudentAchievementArchive"></div>
+
+                                    </p>
+                                </label>
+                            </span>
+                            <span>
+                                <label for="studentAchievements2">
+                                    <p>
+                                        Not sure
+                                        <div class="radioBox"><input id="studentAchievements2" type="radio" value="2" name="StudentAchievementArchive"></div>
+
+                                    </p>
+                                </label>
+                            </span>
+                            <span>
+                                <label for="studentAchievements3">
+                                    <p>
+                                        Important
+                                        <div class="radioBox"><input id="studentAchievements3" type="radio" value="3" name="StudentAchievementArchive"></div>
+
+                                    </p>
+                                </label>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="backNextButtonsWrapper flexDiv">
+                    <div class="column">
+                        <div class="goBackBtn">Go back</div>
+                    </div>
+                    <div class="column">
+                        <div class="nextBtn">Next</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="parentQuestion5" class="parentQuestions">
+                <h2 class="">Which product features will be most important to you?</h2>
+                <div class="borderBox">
+                    <div class="questionProgress pull-right">5th of 8</div>
+                    <h5>College Selection Optimizer</h5>
+                    <p>Model your child's optimal choice based on:</p>
+                    <div class="flexDiv">
+                        <div class="column">
+                            <p>Standardize test performance/GPA</p>
+                            <p>Tuition and living costs</p>
+                            <p>School's size and lifestyle</p>
+                            <p>Geographical location</p>
+                        </div>
+                        <div class="column radioButtonsColumn">
+                            <span>
+                                <label for="collegeOpt1">
+                                    <p>
+                                        Not important
+                                        <div class="radioBox"><input id="collegeOpt1" type="radio" value="1" name="CollegeSelectionOptimizer"></div>
+
+                                    </p>
+                                </label>
+                            </span>
+                            <span>
+                                <label for="collegeOpt2">
+                                    <p>
+                                        Not sure
+                                        <div class="radioBox"><input id="collegeOpt2" type="radio" value="2" name="CollegeSelectionOptimizer"></div>
+
+                                    </p>
+                                </label>
+                            </span>
+                            <span>
+                                <label for="collegeOpt3">
+                                    <p>
+                                        Important
+                                        <div class="radioBox"><input id="collegeOpt3" type="radio" value="3" name="CollegeSelectionOptimizer"></div>
+
+                                    </p>
+                                </label>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="backNextButtonsWrapper flexDiv">
+                    <div class="column">
+                        <div class="goBackBtn">Go back</div>
+                    </div>
+                    <div class="column">
+                        <div class="nextBtn">Next</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="parentQuestion6" class="parentQuestions">
+                <h2 class="">Which product features will be most important to you?</h2>
+                <div class="borderBox">
+                    <div class="questionProgress pull-right">6th of 8</div>
+                    <h5>College Admission Important Date Scheduler</h5>
+                    <p>Keep things on college-bound track via:</p>
+                    <div class="flexDiv">
+                        <div class="column">
+                            <p>Course schedule management</p>
+                            <p>Notifications on upcoming deadlines</p>
+                            <p>Prompts to encourage college/career development</p>
+                            <p>Access to inventory of writing templates</p>
+                        </div>
+                        <div class="column radioButtonsColumn">
+                            <span>
+                                <label for="collegeAdm1">
+                                    <p>
+                                        Not important
+                                        <div class="radioBox"><input id="collegeAdm1" type="radio" value="1" name="CollegeAdmissionScheduler"></div>
+
+                                    </p>
+                                </label>
+                            </span>
+                            <span>
+                                <label for="collegeAdm2">
+                                    <p>
+                                        Not sure
+                                        <div class="radioBox"><input id="collegeAdm2" type="radio" value="2" name="CollegeAdmissionScheduler"></div>
+
+                                    </p>
+                                </label>
+                            </span>
+                            <span>
+                                <label for="collegeOpt3">
+                                    <p>
+                                        Important
+                                        <div class="radioBox"><input id="collegeAdm3" type="radio" value="3" name="CollegeAdmissionScheduler"></div>
+
+                                    </p>
+                                </label>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="backNextButtonsWrapper flexDiv">
+                    <div class="column">
+                        <div class="goBackBtn">Go back</div>
+                    </div>
+                    <div class="column">
+                        <div class="nextBtn">Next</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="parentQuestion7" class="parentQuestions">
+                <h2 class="">Which product features will be most important to you?</h2>
+                <div class="borderBox">
+                    <div class="questionProgress pull-right">7th of 8</div>
+                    <h5>Aptitude Testing</h5>
+                    <p>Measure your child's:</p>
+                    <div class="flexDiv">
+                        <div class="column">
+                            <p>Numerical reasoning</p>
+                            <p>Verbal reasoning</p>
+                            <p>Situational judgment</p>
+                            <p>Cognitive ability</p>
+                        </div>
+                        <div class="column radioButtonsColumn">
+                            @*<div class="radio">
+                    <input id="radio-1" name="radio" type="radio">
+                    <label for="radio-1" class="radio-label">Not important</label>
+                </div>*@
+                            <span>
+                                <label for="aptitude1">
+                                    <p>
+                                        Not important
+                                        <div class="radioBox"><input id="aptitude1" type="radio" value="1" name="Aptitude"></div>
+
+                                    </p>
+                                </label>
+                            </span>
+                            <span>
+                                <label for="aptitude2">
+                                    <p>
+                                        Not sure
+                                        <div class="radioBox"><input id="aptitude2" type="radio" value="2" name="Aptitude"></div>
+                                    </p>
+                                </label>
+                            </span>
+                            <span>
+                                <label for="aptitude3">
+                                    <p>
+                                        Important
+                                        <div class="radioBox"><input id="aptitude3" type="radio" value="3" name="Aptitude"></div>
+
+                                    </p>
+                                </label>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="backNextButtonsWrapper flexDiv">
+                    <div class="column">
+                        <div class="goBackBtn">Go back</div>
+                    </div>
+                    <div class="column">
+                        <div class="nextBtn">Next</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="parentQuestion8" class="parentQuestions">
+                <h2 class="">Which product features will be most important to you?</h2>
+                <div class="borderBox">
+                    <div class="questionProgress pull-right">8th of 8</div>
+                    <h5>Habit builder</h5>
+                    <p>Strengthen your child's skills with:</p>
+                    <div class="flexDiv">
+                        <div class="column">
+                            <p>1-3 minute daily assessments</p>
+                            <p>Engaging content</p>
+                            <p>Personalized cirriculum</p>
+                        </div>
+                        <div class="column radioButtonsColumn">
+                            <span>
+                                <label for="habitBuilder1">
+                                    <p>
+                                        Not important
+                                        <div class="radioBox"><input id="habitBuilder1" type="radio" value="1" name="HabitBuilder"></div>
+
+                                    </p>
+                                </label>
+                            </span>
+                            <span>
+                                <label for="habitBuilder2">
+                                    <p>
+                                        Not sure
+                                        <div class="radioBox"><input id="habitBuilder2" type="radio" value="2" name="HabitBuilder"></div>
+
+                                    </p>
+                                </label>
+                            </span>
+                            <span>
+                                <label for="habitBuilder3">
+                                    <p>
+                                        Important
+                                        <div class="radioBox"><input id="habitBuilder3" type="radio" value="3" name="HabitBuilder"></div>
+
+                                    </p>
+                                </label>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="backNextButtonsWrapper flexDiv">
+                    <div class="column">
+                        <div class="goBackBtn">Go back</div>
+                    </div>
+                    <div class="column">
+                        <div class="nextBtn">Next</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contactInformation" class="parentQuestions">
+                <h2>Tell us about yourself</h2>
+                <div class="form-group row">
+                    <label class="shortLabel col-lg-4 col-md-4 col-sm-4 col-xs-12" for="firstname">First Name:</label>
+                    <div class="shortField col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                        <input type="text" class="form-control required" name="FirstName" id="firstname" value="">
+                        <p class="displayError">Please enter a valid first name</p>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="shortLabel col-lg-4 col-md-4 col-sm-4 col-xs-12" for="lastname">Last Name:</label>
+                    <div class="shortField col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                        <input type="text" class="form-control required" name="LastName" id="lastname" value="">
+                        <p class="displayError">Please enter a valid last name</p>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="shortLabel col-lg-4 col-md-4 col-sm-4 col-xs-12" for="mobilephone">Mobile Phone Number:</label>
+                    <div class="shortField col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                        <input type="tel" class="form-control required" name="PhoneNumber" id="phonenumber" value="">
+                        <p class="displayError">Please enter a valid phone number</p>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="shortLabel col-lg-4 col-md-4 col-sm-4 col-xs-12" for="email">Email:</label>
+                    <div class="shortField col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                        <input type="email" class="form-control required" name="Email" id="email" value="">
+                        <p class="displayError">Please enter a valid email</p>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="shortLabel col-lg-4 col-md-4 col-sm-4 col-xs-12" for="numberofstudents"># of students that will be participating:</label>
+                    <div class="shortField col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                        <select class="form-control required" name="NumberOfStudents" id="numberofstudents" value="">
+                            <option disabled selected>Select</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <p class="displayError">Please fill out number of children participating</p>
+                    </div>
+
+                </div>
+                <div id="childrenGradesDiv"></div>
+                @*<div class="form-group row">
+                        <label class ="shortLabel col-lg-4 col-md-4 col-sm-4 col-xs-12 required" for="childGrade">Child 1 Grade Level</label>
+                        <div  class="shortField col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                            <select class="form-control required" id="childGrade" name="childgrade" value="">
+                                <option disabled selected value>Select</option>
+                                <option value="freshman">Freshman</option>
+                                <option value="sophomore">Sophomore</option>
+                                <option value="junior">Junior</option>
+                                <option value="senior">Senior</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <p class="displayError">Please fill out child's grade</p>
+                        </div>
+                    </div>*@
+                <div class="text-center">
+                    <button class="standardButton continueBtn" id="parentContactContinueBtn" >Continue</button>
+                </div>
+            </div>
+
+            <div id="termsQuestion">
+                <h2>What is your preference in terms of accessing product features?</h2>
+                <span>
+                    <label for="termsQ1">
+                        <p>
+                            <div class="radioBox">
+                                <input id="termsQ1" type="radio" value="1" name="PaymentPreference">
+                            </div>
+                            Free. I’m Ok dealing with advertisements and waive access to premium features
+                        </p>
+                    </label>
+                </span>
+                <span>
+                    <label for="termsQ3">
+                        <p>
+                            <div class="radioBox">
+                                <input id="termsQ3" type="radio" value="2" name="PaymentPreference">
+                            </div>
+                            Monthly payments of $9.99 for unlimited access to all product features
+                        </p>
+                    </label>
+                </span>
+                <span>
+                    <label for="termsQ2">
+                        <p>
+                            <div class="radioBox">
+                                <input id="termsQ2" type="radio" value="3" name="PaymentPreference">
+                            </div>
+                            One-time discounted annual payment of $99 for unlimited access to all product features
+                        </p>
+                    </label>
+                </span>
+
+                <p class="displayError" id="paymentError">Please select your preference of terms</p>
+
+                <p class="smallFont">By clicking "Submit" you agree to our <a href="/Home/TermsOfUse" target="_blank">Terms of Use</a> and <a href="/Home/PrivacyPolicy" target="_blank">Privacy Policy</a></p>
+
+                <div class="text-right">
+                    <button class="standardButton" id="submitParentBtn">Submit</button>
+                </div>
+
+            </div>
+
+            <div id="thankyouPage" class="parentQuestions">
+                <p>Thank you!</p>
+                <p>We are so glad you're here!</p>
+                <p>You will be receiving an email with information about the product and its availability shortly. </p>
+                <p>All the best,</p>
+                <p>The team of Career.care.com</p>
+            </div>
+            
+            <div id="parentError">
+                <p>Sorry, something went wrong. An error occured processing your request.</p>
+            </div>
+
+
+            <!--==================================student questions=========================-->
+
+
+            <div id="studentQuestion1" class="parentQuestions">
+                <h2>Which product features will be most important to you?</h2>
+                <div class="borderBox">
+                    <div class="questionProgress pull-right">1st of 8</div>
+                    <h5>Achievements Archive</h5>
+                    <p>Store your:</p>
+                    <div class="flexDiv">
+                        <div class="column">
+                            <p>Activities</p>
+                            <p>Aptitudes</p>
+                            <p>Interests</p>
+                            <p>Deadlines</p>
+                            <p>Milestones</p>
+                        </div>
+                        <div class="column radioButtonsColumn">
+                            <span>
+                                <label for="studentAchievements1s">
+                                    <p>
+                                        Not important
+                                        <div class="radioBox"><input id="studentAchievements1s" type="radio" value="1" name="StudentStudentAchievementArchive"></div>
+
+                                    </p>
+                                </label>
+                            </span>
+                            <span>
+                                <label for="studentAchievements2s">
+                                    <p>
+                                        Not sure
+                                        <div class="radioBox"><input id="studentAchievements2s" type="radio" value="2" name="StudentStudentAchievementArchive"></div>
+
+                                    </p>
+                                </label>
+                            </span>
+                            <span>
+                                <label for="studentAchievements3s">
+                                    <p>
+                                        Important
+                                        <div class="radioBox"><input id="studentAchievements3s" type="radio" value="3" name="StudentStudentAchievementArchive"></div>
+
+                                    </p>
+                                </label>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="backNextButtonsWrapper flexDiv">
+                    <div class="column">
+                        <div class="goBackBtn">Go back</div>
+                    </div>
+                    <div class="column">
+                        <div class="nextBtn">Next</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="studentQuestion2" class="parentQuestions">
+                <h2 class="">Which product features will be most important to you?</h2>
+                <div class="borderBox">
+                    <div class="questionProgress pull-right">2nd of 8</div>
+                    <h5>Career Exploration</h5>
+                    <p>Browse careers by:</p>
+                    <div class="flexDiv">
+                        <div class="column">
+                            <p>Interests</p>
+                            <p>Personality traits</p>
+                            <p>Salary</p>
+                            <p>Educational requirements</p>
+                        </div>
+                        <div class="column radioButtonsColumn">
+                            <span>
+                                <label for="careerExp1s">
+                                    <p>
+                                        Not important
+                                        <div class="radioBox"><input id="careerExp1s" type="radio" value="1" name="StudentCareerExploration"></div>
+
+                                    </p>
+                                </label>
+                            </span>
+                            <span>
+                                <label for="careerExp2s">
+                                    <p>
+                                        Not sure
+                                        <div class="radioBox">
+                                            <input id="careerExp2s" type="radio" value="2" name="StudentCareerExploration">
+                                        </div>
+
+                                    </p>
+                                </label>
+                            </span>
+                            <span>
+                                <label for="careerExp3s">
+                                    <p>
+                                        Important
+                                        <div class="radioBox"><input id="careerExp3" type="radio" value="3" name="StudentCareerExploration"></div>
+
+                                    </p>
+                                </label>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="backNextButtonsWrapper flexDiv">
+                    <div class="column">
+                        <div class="goBackBtn">Go back</div>
+                    </div>
+                    <div class="column">
+                        <div class="nextBtn">Next</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="studentQuestion3" class="parentQuestions">
+                <h2 class="">Which product features will be most important to you?</h2>
+                <div class="borderBox">
+                    <div class="questionProgress pull-right">3rd of 8</div>
+                    <h5>Career Road Map Development</h5>
+                    <p>Forecast financial aspects of each career path by:</p>
+                    <div class="flexDiv">
+                        <div class="column">
+                            <p>Salary expectations</p>
+                            <p>Tuition costs</p>
+                            <p>Living expenses</p>
+                            <p>Time commitment</p>
+                        </div>
+                        <div class="column radioButtonsColumn">
+                            <span>
+                                <label for="careerRoad1s">
+                                    <p>
+                                        Not important
+                                        <div class="radioBox">
+                                            <input id="careerRoad1s" type="radio" value="1" name="StudentCareerRoadMapDevelopment">
+                                        </div>
+
+                                    </p>
+                                </label>
+                            </span>
+                            <span>
+                                <label for="careerRoad2s">
+                                    <p>
+                                        Not sure
+                                        <div class="radioBox"><input id="careerRoad2s" type="radio" value="2" name="StudentCareerRoadMapDevelopment"></div>
+
+                                    </p>
+                                </label>
+                            </span>
+                            <span>
+                                <label for="careerRoad3s">
+                                    <p>
+                                        Important
+                                        <div class="radioBox"><input id="careeRoad3s" type="radio" value="3" name="StudentCareerRoadMapDevelopment"></div>
+
+                                    </p>
+                                </label>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="backNextButtonsWrapper flexDiv">
+                    <div class="column">
+                        <div class="goBackBtn">Go back</div>
+                    </div>
+                    <div class="column">
+                        <div class="nextBtn">Next</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="studentQuestion4" class="parentQuestions">
+                <h2 class="">Which product features will be most important to you?</h2>
+                <div class="borderBox">
+                    <div class="questionProgress pull-right">4th of 8</div>
+                    <h5>Aptitude Testing</h5>
+                    <p>Measure your strengths in:</p>
+                    <div class="flexDiv">
+                        <div class="column">
+                            <p>Numerical reasoning</p>
+                            <p>Verbal reasoning</p>
+                            <p>Situational judgment</p>
+                            <p>Cognitive ability</p>
+                        </div>
+                        <div class="column radioButtonsColumn">
+                            <span>
+                                <label for="aptitude1s">
+                                    <p>
+                                        Not important
+                                        <div class="radioBox"><input id="aptitude1s" type="radio" value="1" name="StudentAptitude"></div>
+
+                                    </p>
+                                </label>
+                            </span>
+                            <span>
+                                <label for="aptitude2s">
+                                    <p>
+                                        Not sure
+                                        <div class="radioBox"><input id="aptitude2s" type="radio" value="2" name="StudentAptitude"></div>
+                                    </p>
+                                </label>
+                            </span>
+                            <span>
+                                <label for="aptitude3s">
+                                    <p>
+                                        Important
+                                        <div class="radioBox"><input id="aptitude3s" type="radio" value="3" name="StudentAptitude"></div>
+
+                                    </p>
+                                </label>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="backNextButtonsWrapper flexDiv">
+                    <div class="column">
+                        <div class="goBackBtn">Go back</div>
+                    </div>
+                    <div class="column">
+                        <div class="nextBtn">Next</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="studentQuestion5" class="parentQuestions">
+                <h2 class="">Which product features will be most important to you?</h2>
+                <div class="borderBox">
+                    <div class="questionProgress pull-right">5th of 8</div>
+                    <h5>College Selection Optimizer</h5>
+                    <p>Model your optimal choice based on:</p>
+                    <div class="flexDiv">
+                        <div class="column">
+                            <p>Standardize test performance/GPA</p>
+                            <p>Tuition and living costs</p>
+                            <p>School's size and lifestyle</p>
+                            <p>Geographical location</p>
+                        </div>
+                        <div class="column radioButtonsColumn">
+                            <span>
+                                <label for="collegeOpt1s">
+                                    <p>
+                                        Not important
+                                        <div class="radioBox"><input id="collegeOpt1s" type="radio" value="1" name="StudentCollegeSelectionOptimizer"></div>
+
+                                    </p>
+                                </label>
+                            </span>
+                            <span>
+                                <label for="collegeOpt2s">
+                                    <p>
+                                        Not sure
+                                        <div class="radioBox"><input id="collegeOpt2s" type="radio" value="2" name="StudentCollegeSelectionOptimizer"></div>
+
+                                    </p>
+                                </label>
+                            </span>
+                            <span>
+                                <label for="collegeOpt3s">
+                                    <p>
+                                        Important
+                                        <div class="radioBox"><input id="collegeOpt3s" type="radio" value="3" name="StudentCollegeSelectionOptimizer"></div>
+
+                                    </p>
+                                </label>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="backNextButtonsWrapper flexDiv">
+                    <div class="column">
+                        <div class="goBackBtn">Go back</div>
+                    </div>
+                    <div class="column">
+                        <div class="nextBtn">Next</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="stuentQuestion6" class="parentQuestions">
+                <h2 class="">Which product features will be most important to you?</h2>
+                <div class="borderBox">
+                    <div class="questionProgress pull-right">6th of 8</div>
+                    <h5>College Admission Important Date Scheduler</h5>
+                    <p>Keep things on college-bound track via:</p>
+                    <div class="flexDiv">
+                        <div class="column">
+                            <p>Course schedule management</p>
+                            <p>Notifications on upcoming deadlines</p>
+                            <p>Prompts to encourage college/career development</p>
+                            <p>Access to inventory of writing templates</p>
+                        </div>
+                        <div class="column radioButtonsColumn">
+                            <span>
+                                <label for="collegeAdm1s">
+                                    <p>
+                                        Not important
+                                        <div class="radioBox"><input id="collegeAdm1s" type="radio" value="1" name="StudentCollegeAdmissionScheduler"></div>
+
+                                    </p>
+                                </label>
+                            </span>
+                            <span>
+                                <label for="collegeAdm2s">
+                                    <p>
+                                        Not sure
+                                        <div class="radioBox"><input id="collegeAdm2s" type="radio" value="2" name="StudentCollegeAdmissionScheduler"></div>
+
+                                    </p>
+                                </label>
+                            </span>
+                            <span>
+                                <label for="collegeOpt3s">
+                                    <p>
+                                        Important
+                                        <div class="radioBox"><input id="collegeAdm3s" type="radio" value="3" name="StudentCollegeAdmissionScheduler"></div>
+
+                                    </p>
+                                </label>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="backNextButtonsWrapper flexDiv">
+                    <div class="column">
+                        <div class="goBackBtn">Go back</div>
+                    </div>
+                    <div class="column">
+                        <div class="nextBtn">Next</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="studentQuestion7" class="parentQuestions">
+                <h2 class="">Which product features will be most important to you?</h2>
+                <div class="borderBox">
+                    <div class="questionProgress pull-right">7th of 8</div>
+                    <h5>Career Advancement Loyalty Program</h5>
+                    <p>Get motivated with redeemable points for:</p>
+                    <div class="flexDiv">
+                        <div class="column">
+                            <p>Accomplished activities</p>
+                            <p>Reached milestones</p>
+                            <p>College/Career-bound advancements</p>
+                        </div>
+                        <div class="column radioButtonsColumn">
+                            <span>
+                                <label for="careerRewards1s">
+                                    <p>
+                                        Not important
+                                        <div class="radioBox"><input id="careerRewards1s" type="radio" value="1" name="StudentCareerRewards"></div>
+
+                                    </p>
+                                </label>
+                            </span>
+                            <span>
+                                <label for="careerRewards2s">
+                                    <p>
+                                        Not sure
+                                        <div class="radioBox"><input id="careerRewards2s" type="radio" value="2" name="StudentCareerRewards"></div>
+
+                                    </p>
+                                </label>
+                            </span>
+                            <span>
+                                <label for="careerRewards3s">
+                                    <p>
+                                        Important
+                                        <div class="radioBox"><input id="careerRewards3s" type="radio" value="3" name="StudentCareerRewards"></div>
+
+                                    </p>
+                                </label>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="backNextButtonsWrapper flexDiv">
+                    <div class="column">
+                        <div class="goBackBtn">Go back</div>
+                    </div>
+                    <div class="column">
+                        <div class="nextBtn">Next</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="studentQuestion8" class="parentQuestions">
+                <h2 class="">Which product features will be most important to you?</h2>
+                <div class="borderBox">
+                    <div class="questionProgress pull-right">8th of 8</div>
+                    <h5>Habit builder</h5>
+                    <p>Strengthen your skills with:</p>
+                    <div class="flexDiv">
+                        <div class="column">
+                            <p>1-3 minute daily assessments</p>
+                            <p>Engaging content</p>
+                            <p>Personalized cirriculum</p>
+                        </div>
+                        <div class="column radioButtonsColumn">
+                            <span>
+                                <label for="habitBuilder1s">
+                                    <p>
+                                        Not important
+                                        <div class="radioBox"><input id="habitBuilder1s" type="radio" value="1" name="StudentHabitBuilder"></div>
+
+                                    </p>
+                                </label>
+                            </span>
+                            <span>
+                                <label for="habitBuilder2s">
+                                    <p>
+                                        Not sure
+                                        <div class="radioBox"><input id="habitBuilder2s" type="radio" value="2" name="StudentHabitBuilder"></div>
+
+                                    </p>
+                                </label>
+                            </span>
+                            <span>
+                                <label for="habitBuilder3s">
+                                    <p>
+                                        Important
+                                        <div class="radioBox"><input id="habitBuilder3s" type="radio" value="3" name="StudentHabitBuilder"></div>
+
+                                    </p>
+                                </label>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="backNextButtonsWrapper flexDiv">
+                    <div class="column">
+                        <div class="goBackBtn">Go back</div>
+                    </div>
+                    <div class="column">
+                        <div class="nextBtn">Next</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contactInformationStudent" class="parentQuestions">
+                <h2>Tell us about yourself</h2>
+                <div class="">
+
+                    <div class="form-group row">
+                        <label class="shortLabel col-lg-4 col-md-4 col-sm-4 col-xs-12" for="firstnameStudent">First Name:</label>
+                        <div class="shortField col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                            <input type="text" class="form-control required1" name="StudentFirstName" id="firstnameStudent" value="">
+                            <p class="displayError">Please enter your valid first name</p>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="shortLabel col-lg-4 col-md-4 col-sm-4 col-xs-12" for="lastnameStudent">Last Name:</label>
+                        <div class="shortField col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                            <input type="text" class="form-control required1" name="StudentLastName" id="lastnameStudent" value="">
+                            <p class="displayError">Please enter your valid last name</p>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="shortLabel col-lg-4 col-md-4 col-sm-4 col-xs-12" for="phonenumberStudent">Phone Number <span class="smallFont">(preferably mobile)</span>:</label>
+                        <div class="shortField col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                            <input type="tel" class="form-control required1" name="StudentPhoneNumber" id="phonenumberStudent" value="">
+                            <p class="displayError">Please enter your valid phone number</p>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="shortLabel col-lg-4 col-md-4 col-sm-4 col-xs-12" for="emailStudent">Email:</label>
+                        <div class="shortField col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                            <input type="email" class="form-control required1" name="StudentEmail" id="emailStudent" value="">
+                            <p class="displayError">Please enter your valid email</p>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="shortLabel col-lg-4 col-md-4 col-sm-4 col-xs-12 required" for="childGradeStudent">Grade Level</label>
+                        <div class="shortField col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                            <select class="form-control required1" id="childGradeStudent" name="StudentStudentGrade" value="">
+                                <option disabled selected>Select</option>
+                                <option value="2">Freshman</option>
+                                <option value="3">Sophomore</option>
+                                <option value="4">Junior</option>
+                                <option value="5">Senior</option>
+                                <option value="6">Middle School</option>
+                                <option value="1">Other</option>
+                                
+                            </select>
+                            <p class="displayError">Please fill out your grade</p>
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                        <button class="standardButton continueBtn" id="studentContactContinueBtn">Continue</button>
+                    </div>
+
+                    @*<div class="backNextButtonsWrapper flexDiv">
+                            <div class="column">
+                                <div class="goBackBtn">Go back</div>
+                            </div>
+                            <div class="column">
+                                <div id="studentContactNextBtn" class="nextBtn">Next</div>
+                            </div>
+                        </div>*@
+
+                </div>
+                @*<div class="form-group row">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" class="form-control required"> Ok to notify my parent(s) about this awesome product.
+                            </label>
+                        </div>
+                    </div>*@
+
+            </div>
+
+
+            <div id="contactInformationStudent2" class="parentQuestions">
+                <h2>Tell us about your parent(s)</h2>
+                <div class="">
+
+                    <div class="form-group row">
+                        <label class="shortLabel col-lg-4 col-md-4 col-sm-4 col-xs-12" for="firstnameParent">Parent 1 First Name:</label>
+                        <div class="shortField col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                            <input type="text" class="form-control required2" name="FirstParentFirstName" id="firstnameParent" value="">
+                            <p class="displayError">Please enter a valid parent's first name</p>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="shortLabel col-lg-4 col-md-4 col-sm-4 col-xs-12" for="phonenumberParent"> Parent 1 Phone Number <span class="smallFont">(preferably mobile)</span>:</label>
+                        <div class="shortField col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                            <input type="tel" class="form-control required2" name="FirstParentPhoneNumber" id="phonenumberParent" value="">
+                            <p class="displayError">Please enter a valid parent's phone number</p>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="shortLabel col-lg-4 col-md-4 col-sm-4 col-xs-12" for="emailParent"> Parent 1 Email:</label>
+                        <div class="shortField col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                            <input type="email" class="form-control required2" name="FirstParentEmail" id="emailParent" value="">
+                            <p class="displayError">Please enter a valid parent's email</p>
+                        </div>
+                    </div>
+
+                    <h3>(Optional):</h3>
+                    <div class="form-group row">
+                        <label class="shortLabel col-lg-4 col-md-4 col-sm-4 col-xs-12" for="firstnameParent2">Parent 2 First Name:</label>
+                        <div class="shortField col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                            <input type="text" class="form-control" name="SecondParentFirstName" id="firstnameParent2" value="">
+                            <p class="displayError">Please enter a valid parent's first name</p>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="shortLabel col-lg-4 col-md-4 col-sm-4 col-xs-12" for="phonenumberParent2"> Parent 2 Phone Number (preferably mobile):</label>
+                        <div class="shortField col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                            <input type="tel" class="form-control" name="SecondParentPhoneNumber" id="phonenumberParent2" value="">
+                            <p class="displayError">Please enter a valid parent's phone number</p>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="shortLabel col-lg-4 col-md-4 col-sm-4 col-xs-12" for="emailParent2"> Parent 2 Email:</label>
+                        <div class="shortField col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                            <input type="email" class="form-control" name="SecondParentEmail" id="emailParent2" value="">
+                            <p class="displayError">Please enter a valid parent's email</p>
+                        </div>
+                    </div>
+                    <div class="form-group row termsRow">
+                        @*<label class="shortLabel col-lg-4 col-md-4 col-sm-4 col-xs-12" for="classSelect"></label>*@
+                        <div class="shortField col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="checkboxWrapper">
+                                <div class="checkbox">
+                                    <input type="checkbox" name="checkbox" class="required2">
+                                    <label>
+                                        It's OK to notify my parent(s) about this awesome product.
+                                    </label>
+                                </div>
+                                <p class="displayError termsError">You haven't selected "Ok to notify your parent(s)"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="smallFont">By clicking "Submit" you agree to our <a href="/Home/TermsOfUse" target="_blank">Terms of Use</a> and <a href="/Home/PrivacyPolicy" target="_blank">Privacy Policy</a></p>
+
+                </div>
+
+                <div class="text-right">
+                    <button class="standardButton" id="submitStudentBtn">Submit</button>
+                </div>
+            </div>
+
+
+            <div id="thankyouPageStudent" class="parentQuestions">
+                <p>Thank you!</p>
+                <p>We are so glad you made it this far!</p>
+                <p>We'll be following up with your parent(s) regarding the next steps on joining our program, but in the meantime, be sure to check out <a href="http://www.careerthesaurus.com/careers" target="_blank">CareerThesaurus.com/careers</a> - our career exploration site. </p>
+                <p>We all hope you like it!</p>
+                <p>Cheers!</p>
+                <p>The Career.care Team</p>
+            </div>
+
+            <div id="studentError">
+                <p>Sorry, something went wrong. An error occured processing your request.</p>
+            </div>
+
+        </div><!--box-->
+    </div>
+</section><!--mainContainer-->
+<section id="howWorks">
+    <div class="container">
+        <h2 class="text-center">See how it works</h2>
+        <div id="howItWorksWrapper" class="flexDiv">
+            <div class="column text-center parentColumn">
+                <h3>Parent's view</h3>
+
+                <h4>Sign Up</h4>
+                <p>Create an account. It's easy.</p>
+
+                <h4>Create Family Profile</h4>
+                <p>Connect with your student's college and career search process.</p>
+
+                <h4>Assess Career Path</h4>
+                <p>Evaluate 1, 5, 10 year forecast for each career trajectory.</p>
+
+                <h4>Monitor Progress</h4>
+                <p>Stay informed on all College/Career bound activities.</p>
+
+                <h4>Share Rewards</h4>
+                <p>Motivate your student with points and cash prizes.</p>
+            </div>
+            <div class="column text-center studentColumn">
+                <h3>Student's view</h3>
+
+                <h4>Sign Up</h4>
+                <p>Create an account. It's easy.</p>
+
+                <h4>Set Career Destination</h4>
+                <p>Match your interests and strengths to careers worth pursuing.</p>
+
+                <h4>Explore Education Paths</h4>
+                <p>Review degree options that fit your future potential. We have all degrees on our radar.</p>
+
+                <h4>Stay on Track</h4>
+                <p>Gain the upper hand with our dedicated guidance. We manage your deadlines.</p>
+
+                <h4>Get Rewarded</h4>
+                <p>Earn points redeemable for cash, discounts and scholarships.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="aboutUs">
+    <div class="container">
+        <h2>About us and our mission</h2>
+        <p>
+            Career.care is a technology solution that guides parents and their high school children through the process of <strong>career exploration</strong> and <strong>college admission</strong>. At some point, every parent and every teenager will have to gear up for the exciting but often daunting task of post-high school and <strong>degree path selection</strong>.  </p>
+
+        <p>The process is filled with many known and unknown variables.  Many things influence each degree consideration: cost, time commitment, deadline restraints, constant shifts in the employment landscape, education requirements, and personal preferences. All of these factors need to be considered in order to make the best decisions.
+        </p>
+
+        <p>
+            Our product features help families <strong>make informed decisions</strong> during one of the most critical periods of family life. We put together a team of highly dedicated and brilliant professionals whose sole purpose is to optimize the college selection and admission process while maximizing on each child’s <strong>personal potential</strong>.
+        </p>
+
+        <p>
+            We are super organized, vastly experienced, and profoundly <strong>data driven</strong>. We eliminate noise and develop personalized forecasts based on your input and up-to date statistical figures. We create a roadmap to help our members to stay on track.
+        </p>
+
+        <p>
+            We encourage and <strong>reward positive behavior</strong> for each student member, while continuously keeping parents informed and connected to the process. In short, we strive to keep your <strong>entire family</strong> ahead of the curve. That’s what Career.care is all about!
+        </p>
+
+        <p>Join us NOW with no-risk guarantee <a id="signUpLink" href="">sign up</a>.</p>
+    </div>
+</section>
+@section scripts {
+    <script>
+        $(document).ready(function () {
+            var windowHeight = $(window).height();
+
+            var studentGradesArray = [];
+            $('#aboutLink').click(function () {
+                if ($(window).width() < 768) {
+                    $('html, body').animate({ scrollTop: $('#aboutUs').offset().top - 150 }, 'slow');
+                }
+                else {
+                    $('html, body').animate({ scrollTop: $('#aboutUs').offset().top }, 'slow');
+                }
+            });
+
+            $('#howWorksLink').click(function () {
+                if ($(window).width() < 768) {
+                    $('html, body').animate({ scrollTop: $('#howWorks').offset().top - 150 }, 'slow');
+                }
+                else {
+                    $('html, body').animate({ scrollTop: $('#howWorks').offset().top }, 'slow');
+                }
+            });
+
+            $('#signUpLink').click(function () {
+                $('html, body').animate({ scrollTop: $('#parentStudentBox').offset().top }, 'slow');
+            });
+
+            $('input[type="tel"]').on('touchstart', function () {
+                $(this).attr('type', 'number');
+            });
+
+            $('input[type="text"]').on('keydown blur', function () {
+                $(this).attr('type', 'text');
+            });
+
+
+            $('#parentStartBtn').click(function () {
+                $('#parentQuestion1').slideDown();
+                $('#parentStudentBox').slideUp();
+                $('.navbar-nav').hide();
+                $('.navbar-toggle').hide();
+                if ($(window).width() < 768) {
+                    $('#logoContainer').hide();
+                    $('#aboutUs').hide();
+                    $('#howWorks').hide();
+                }
+                else {
+                    $('#aboutUs').hide();
+                    $('#howWorks').hide();
+                }
+            });
+
+
+            $('#studentStartBtn').click(function () {
+                $('#studentQuestion1').slideDown();
+                $('#parentStudentBox').slideUp();
+                $('.navbar-nav').hide();
+                $('.navbar-toggle').hide();
+
+                if ($(window).width() < 768) {
+                    $('#logoContainer').hide();
+                    $('#aboutUs').hide();
+                    $('#howWorks').hide();
+                }
+                else {
+                    $('#aboutUs').hide();
+                    $('#howWorks').hide();
+                }
+            });
+
+
+            $('.goBackBtn').click(function () {
+                var currentSlide = $(this).closest('.parentQuestions');
+                $(currentSlide).slideUp();
+                $(currentSlide).prev().slideDown();
+                $(currentSlide).prev().find('.nextBtn').show();
+            });
+
+            $('.nextBtn').click(function () {
+                var currentSlide = $(this).closest('.parentQuestions');
+                $(currentSlide).slideUp();
+                $(currentSlide).next().slideDown();
+            });
+
+            //when user clicks on radio button, move to next slide
+            $('.parentQuestions input[type="radio"]').on('click change', function (e) {
+                var currentSlide = $(this).closest('.parentQuestions');
+                var nextSlide = $(currentSlide).next();
+                $(currentSlide).slideUp();
+                $(nextSlide).slideDown('slow', function () {
+                    $(document).scrollTop(0);
+                    //on mobile recalculate window height
+                    if ($(window).width() < 768) {
+                        $('#frontPageOverlay').css({ 'min-height': $(nextSlide).height() + 50 });
+                        $('.mainContainer').css({ 'min-height': $(nextSlide).height() + 50 });
+
+                        if ($(nextSlide).attr('id') == "contactInformation" || $(nextSlide).attr('id') == "contactInformationStudent" || $(nextSlide).attr('id') == "contactInformationStudent2") {
+                            $('.mainContainer').css({ 'background-image': 'none' });
+                            $('footer').hide();
+                        }
+                        else {
+                            $('.mainContainer').css({ 'background-image': '/Content/images/background1.jpg' });
+                            $('footer').show();
+                        }
+
+                    }
+                    else { //desktop
+                        if ($(nextSlide).attr('id') == "contactInformation" || $(nextSlide).attr('id') == "contactInformationStudent" || $(nextSlide).attr('id') == "contactInformationStudent2") {
+                            $('footer').hide();
+                        }
+                    }
+                });
+
+
+            });
+
+            //continue Btn after parent fills out contact info
+            $('#parentContactContinueBtn').click(function () {
+                validateAnswers();
+            });
+
+            $("#numberofstudents").change(function () {
+                var numberOfTimes = parseInt($('#numberofstudents').val(), 10) + 1;
+                $('#childrenGradesDiv').empty();
+                for (var i = 1; i < numberOfTimes; i++) {
+                    $('#childrenGradesDiv').append('<div class="form-group row"><label class ="shortLabel col-lg-4 col-md-4 col-sm-4 col-xs-12 required" for="childGrade' + i + '">Child ' + i + ' Grade Level</label> <div  class="shortField col-lg-8 col-md-8 col-sm-8 col-xs-12"><select class="form-control required" id="childGrade' + i + '" name="ChildGrade" value="">' +
+                     '<option disabled selected value>Select</option>' +
+                     '<option value="2">Freshman</option>' +
+                     '<option value="3">Sophomore</option>' +
+                     '<option value="4">Junior</option>' +
+                     '<option value="5">Senior</option>' +
+                     '<option value="6">Middle School</option>' +
+                     '<option value="1">Other</option>' +
+                 '</select>' +
+                 '<p class="displayError">Please fill out child\'s grade</p></div></div>' +
+                      '');
+                }
+                if ($(window).width() < 768) {
+                    $('.mainContainer').css('min-height', $('#contactInformation').height() + 50);
+                    $('#frontPageOverlay').css('min-height', $('#contactInformation').height() + 50);
+                }
+            });
+
+
+            $('#submitParentBtn').click(function () {
+                //check if the last question is answered and submit
+                if ($('input[name="PaymentPreference"]:checked').val() == '' || $('input[name="PaymentPreference"]:checked').val() == 'undefined' || $('input[name="PaymentPreference"]:checked').val() == null) {
+                    $('#paymentError').show();
+                }
+                else {
+                    submitParentAnswers();
+                }
+            });
+
+            function validateAnswers() {
+                var valid = true;
+                var errorList = [];
+
+                //get student grades
+                var numberOfTimes = parseInt($('#numberofstudents').val(), 10) + 1;
+                for (var i = 1; i < numberOfTimes; i++) {
+                    studentGradesArray.push($('#childGrade' + i).val());
+                }
+
+                $('.required').each(function (index, element) {
+                    var name = $(element).attr('name');
+                    var value = $(element).val();
+                    switch (name) {
+                        case 'Email':
+                            if (!validateEmail(value)) {
+                                valid = false;
+                                //errorList.push('email');
+                                $(element).closest('.shortField').find('.displayError').show();
+                                $(element).addClass('hasError');
+                            }
+                            else {
+                                $(element).closest('.shortField').find('.displayError').hide();
+                                $(element).removeClass('hasError');
+                            }
+                            break;
+                        case 'PhoneNumber':
+                            if (!validatePhone(value)) {
+                                valid = false;
+                                //errorList.push('phone number');
+                                $(element).closest('.shortField').find('.displayError').show();
+                                $(element).addClass('hasError');
+                            } else {
+                                $(element).closest('.shortField').find('.displayError').hide();
+                                $(element).removeClass('hasError');
+                            }
+                            break;
+                        case 'FirstName':
+                            if (value.length < 2 || value == null) {
+                                valid = false;
+                                //errorList.push('name');
+                                $(element).closest('.shortField').find('.displayError').show();
+                                $(element).addClass('hasError');
+                            }
+                            else {
+                                $(element).closest('.shortField').find('.displayError').hide();
+                                $(element).removeClass('hasError');
+                            }
+                            break;
+                        case 'LastName':
+                            if (value.length < 2 || value == null) {
+                                valid = false;
+                                //errorList.push('last name');
+                                $(element).closest('.shortField').find('.displayError').show();
+                                $(element).addClass('hasError');
+                            }
+                            else {
+                                $(element).closest('.shortField').find('.displayError').hide();
+                                $(element).removeClass('hasError');
+                            }
+                            break;
+                        case 'NumberOfStudents':
+                            if (value == "" || value == null) {
+                                valid = false;
+                                //errorList.push('last name');
+                                $(element).closest('.shortField').find('.displayError').show();
+                                $(element).addClass('hasError');
+                            }
+                            else {
+                                $(element).closest('.shortField').find('.displayError').hide();
+                                $(element).removeClass('hasError');
+                            }
+                            break;
+                        case 'ChildGrade':
+                            if (value == "" || value == null) {
+                                valid = false;
+                                $(element).closest('.shortField').find('.displayError').show();
+                                $(element).addClass('hasError');
+                            }
+                            else {
+                                $(element).closest('.shortField').find('.displayError').hide();
+                                $(element).removeClass('hasError');
+                            }
+                            break;
+
+                            //default:
+                            //    if (value == '' || value == null) {
+                            //        valid = false;
+                            //        alert('You must fill out this field');
+                            //    }
+                            //    break;
+                    }
+                });
+
+                //if there are any errors display them
+                if (!valid) {
+                    $('html,body').animate({
+                        scrollTop: $(".hasError").offset().top - 50
+                    });
+                    return false;
+                }
+                $(document).scrollTop(0);
+                $('#contactInformation').hide();
+                $('#termsQuestion').show();
+
+                //on mobile recalculate window height
+                if ($(window).width() < 768) {
+                    //  $('.mainContainer').css({ 'height': $('#termsQuestion').height() + 50 })
+                    //  $('#frontPageOverlay').css('height', $('#termsQuestion').height() + 50);
+                    $('.mainContainer').css({ 'min-height': '100%' });
+                    $('#frontPageOverlay').css('min-height', '100%');
+                    $(footer).show();
+                }
+            }
+
+            //function validatePhone(phone) {
+            //    if (phone) {
+            //        var formattedNumber = formatPhoneNumber(phone.replace(/(\s|\.|\-|\(|\))/g, ''));
+            //        if (formattedNumber == "") {
+            //            return false;
+            //        }
+            //        return true;
+            //    }
+            //    return false;
+            //}
+            function validatePhone(phone) {
+                if (phone) {
+                    //var reg = /^[(]{0,1}[0-9]{3}[)]{0,1}[-\s\.]{0,1}[0-9]{3}[-\s\.]{0,1}[0-9]{4}$/;
+                    var reg = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/;
+                    if (reg.test(phone)) {
+                        //return emailExist(email);
+                        return true;
+                    }
+                }
+                return false;
+            }
+            function formatPhoneNumber(str) {
+                var raw_number = str.replace(/([^0-9]|\.|\-|\(\))/g, '');
+                var regex1 = /^1?([2-9]..)([2-9]..)(....)$/;
+                if (!regex1.test(raw_number)) {
+                    return "";
+                } else {
+                    return raw_number.replace(regex1, '$1$2$3');
+                }
+            }
+            function validateEmail(email) {
+                if (email) {
+                    var reg = /^(([^<>()[\]\\.,;:\s@@\"]+(\.[^<>()[\]\\.,;:\s@@\"]+)*)|(\".+\"))@@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                    if (reg.test(email)) {
+                        //return emailExist(email);
+                        return true;
+                    }
+                }
+                return false;
+            }
+
+
+            function submitParentAnswers() {
+                $.ajax({
+                    url: '/Home/getParentResponses',
+                    type: 'POST',
+                    dataType: 'json',
+                    data: {
+                        Aptitude: $('input[name="Aptitude"]:checked').val(),
+                        CareerExploration: $('input[name="CareerExploration"]:checked').val(),
+                        CareerRoadMapDevelopment: $('input[name="CareerRoadMapDevelopment"]:checked').val(),
+                        StudentAchievementArchive: $('input[name="StudentAchievementArchive"]:checked').val(),
+                        CollegeSelectionOptimizer: $('input[name="CollegeSelectionOptimizer"]:checked').val(),
+                        CollegeAdmissionScheduler: $('input[name="CollegeAdmissionScheduler"]:checked').val(),
+                        CareerRewards: $('input[name="CareerRewards"]:checked').val(),
+                        HabitBuilder: $('input[name="HabitBuilder"]:checked').val(),
+                        FirstName: $('#firstname').val(),
+                        LastName: $('#lastname').val(),
+                        PhoneNumber: $('#phonenumber').val(),
+                        Email: $('#email').val(),
+                        NumberOfStudents: $('#numberofstudents').val(),
+                        StudentGradesArray: JSON.stringify(studentGradesArray),
+                        PaymentPreference: $('input[name="PaymentPreference"]:checked').val()
+                    }
+                }).success(function (response) {
+
+                    console.log('success');
+
+                    $('#termsQuestion').hide();
+                    $('#thankyouPage').show();
+                    $('#aboutUs').show();
+                    $('#howWorks').show();
+                    $(document).scrollTop(0);
+                    $('.navbar-nav').show();
+                    $('#parentError').hide();
+
+                    if ($(window).width() < 768) {
+                        $('.navbar-toggle').show();
+                        $('.mainContainer').css({ 'min-height': $('#thankyouPage').height() + 50 });
+                        $('#frontPageOverlay').css('min-height', $('#thankyouPage').height() + 50);
+                        $('#frontPageOverlay').css('height', $('#thankyouPage').height() + 66);
+                    }
+                }).error(function (response) {
+                    console.log('error');
+                    console.log(response);
+
+                    $('#termsQuestion').hide();
+                    $('#parentError').show();
+                    $('#aboutUs').show();
+                    $('#howWorks').show();
+                    $(document).scrollTop(0);
+                    $('.navbar-nav').show();
+
+                });
+            }
+
+
+
+            $('#studentContactContinueBtn').click(function () {
+                validateStudentAnswersPart1();
+            });
+
+
+            $('#submitStudentBtn').click(function () {
+                validateStudentAnswersPart2();
+            });
+
+            function validateStudentAnswersPart1() {
+                var valid = true;
+                var errorList = [];
+
+                $('.required1').each(function (index, element) {
+                    var name = $(element).attr('name');
+                    var value = $(element).val();
+                    switch (name) {
+                        case 'StudentEmail':
+                            if (!validateEmail(value)) {
+                                valid = false;
+                                //errorList.push('email');
+                                $(element).closest('.shortField').find('.displayError').show();
+                                $(element).addClass('hasError');
+                            }
+                            else {
+                                $(element).closest('.shortField').find('.displayError').hide();
+                                $(element).removeClass('hasError');
+                            }
+                            break;
+                        case 'StudentPhoneNumber':
+                            if (!validatePhone(value)) {
+                                valid = false;
+                                //errorList.push('phone number');
+                                $(element).closest('.shortField').find('.displayError').show();
+                                $(element).addClass('hasError');
+                            } else {
+                                $(element).closest('.shortField').find('.displayError').hide();
+                                $(element).removeClass('hasError');
+                            }
+                            break;
+                        case 'StudentFirstName':
+                            if (value.length < 2 || value == null) {
+                                valid = false;
+                                //errorList.push('name');
+                                $(element).closest('.shortField').find('.displayError').show();
+                                $(element).addClass('hasError');
+                            }
+                            else {
+                                $(element).closest('.shortField').find('.displayError').hide();
+                                $(element).removeClass('hasError');
+                            }
+                            break;
+                        case 'StudentLastName':
+                            if (value.length < 2 || value == null) {
+                                valid = false;
+                                //errorList.push('last name');
+                                $(element).closest('.shortField').find('.displayError').show();
+                                $(element).addClass('hasError');
+                            }
+                            else {
+                                $(element).closest('.shortField').find('.displayError').hide();
+                                $(element).removeClass('hasError');
+                            }
+                            break;
+                        case 'StudentStudentGrade':
+                            if (value == "" || value == null) {
+                                valid = false;
+                                $(element).closest('.shortField').find('.displayError').show();
+                                $(element).addClass('hasError');
+                            }
+                            else {
+                                $(element).closest('.shortField').find('.displayError').hide();
+                                $(element).removeClass('hasError');
+                            }
+                            break;
+
+                    }
+                });
+
+                //if there are any errors display them
+                if (!valid) {
+                    $('html,body').animate({
+                        scrollTop: $(".hasError").offset().top - 50
+                    });
+                    return false;
+                }
+                //submitStudentAnswers();
+                $(document).scrollTop(0);
+                $('#contactInformationStudent').hide();
+                $('#contactInformationStudent2').show();
+
+                //on mobile recalculate window height
+                if ($(window).width() < 768) {
+                    $('.mainContainer').css({ 'min-height': '100%' });
+                    $('#frontPageOverlay').css('min-height', '100%');
+                    $(footer).show();
+                }
+            }
+
+
+
+
+            function validateStudentAnswersPart2() {
+                var valid = true;
+                var errorList = [];
+
+                $('.required2').each(function (index, element) {
+                    var name = $(element).attr('name');
+                    var value = $(element).val();
+                    switch (name) {
+                        case 'FirstParentFirstName':
+                            if (value.length < 2 || value == null) {
+                                valid = false;
+                                //errorList.push('name');
+                                $(element).closest('.shortField').find('.displayError').show();
+                                $(element).addClass('hasError');
+                            }
+                            else {
+                                $(element).closest('.shortField').find('.displayError').hide();
+                                $(element).removeClass('hasError');
+                            }
+                            break;
+                        case 'FirstParentEmail':
+                            if (!validateEmail(value)) {
+                                valid = false;
+                                //errorList.push('email');
+                                $(element).closest('.shortField').find('.displayError').show();
+                                $(element).addClass('hasError');
+                            }
+                            else {
+                                $(element).closest('.shortField').find('.displayError').hide();
+                                $(element).removeClass('hasError');
+                            }
+                            break;
+                        case 'FirstParentPhoneNumber':
+                            if (!validatePhone(value)) {
+                                valid = false;
+                                //errorList.push('phone number');
+                                $(element).closest('.shortField').find('.displayError').show();
+                                $(element).addClass('hasError');
+                            } else {
+                                $(element).closest('.shortField').find('.displayError').hide();
+                                $(element).removeClass('hasError');
+                            }
+                            break;
+                        case 'checkbox':
+                            if (!$(element).is(':checked')) {
+                                valid = false;
+                                $('.termsError').show();
+                                $('.checkboxWrapper').addClass('hasError');
+                                //errorList.push('you haven\'t agreed to terms and conditions');
+                            } else {
+                                //hide error
+                                $('.termsError').hide();
+                                $('.checkboxWrapper').removeClass('hasError');
+                            }
+                            break;
+
+                            //default:
+                            //    if (value == '' || value == null) {
+                            //        valid = false;
+                            //        alert('You must fill out this field');
+                            //    }
+                            //    break;
+                    }
+                });
+
+                //if there are any errors display them
+                if (!valid) {
+                    $('html,body').animate({
+                        scrollTop: $(".hasError").offset().top - 50
+                    });
+                    return false;
+                }
+                submitStudentAnswers();
+            }
+
+            function submitStudentAnswers() {
+                $.ajax({
+                    url: '/Home/getStudentResponses',
+                    type: 'POST',
+                    dataType: 'json',
+                    data: {
+                        Aptitude: $('input[name="StudentAptitude"]:checked').val(),
+                        CareerExploration: $('input[name="StudentCareerExploration"]:checked').val(),
+                        CareerRoadMapDevelopment: $('input[name="StudentCareerRoadMapDevelopment"]:checked').val(),
+                        StudentAchievementArchive: $('input[name="StudentStudentAchievementArchive"]:checked').val(),
+                        CollegeSelectionOptimizer: $('input[name="StudentCollegeSelectionOptimizer"]:checked').val(),
+                        CollegeAdmissionScheduler: $('input[name="StudentCollegeAdmissionScheduler"]:checked').val(),
+                        CareerRewards: $('input[name="StudentCareerRewards"]:checked').val(),
+                        HabitBuilder: $('input[name="StudentHabitBuilder"]:checked').val(),
+                        FirstName: $('#firstnameStudent').val(),
+                        LastName: $('#lastnameStudent').val(),
+                        PhoneNumber: $('#phonenumberStudent').val(),
+                        Email: $('#emailStudent').val(),
+                        StudentGrade: $('#childGradeStudent').val(),
+                        FirstParentFirstName: $('#firstnameParent').val(),
+                        FirstParentPhoneNumber: $('#phonenumberParent').val(),
+                        FirstParentEmail: $('#emailParent').val(),
+                        SecondParentFirstName: $('#firstnameParent2').val(),
+                        SecondParentPhoneNumber: $('#phonenumberParent2').val(),
+                        SecondParentEmail: $('#emailParent2').val()
+
+                    }
+                }).success(function (response) {
+                    //console.log('success');
+
+                    $('#contactInformationStudent2').hide();
+                    $('#thankyouPageStudent').show();
+                    $('#aboutUs').show();
+                    $('#howWorks').show();
+                    $(document).scrollTop(0);
+                    $('.navbar-nav').show();
+                    $('#studentError').hide();
+
+                    if ($(window).width() < 768) {
+                        $('.navbar-toggle').show();
+                        $('.mainContainer').css({ 'min-height': $('#thankyouPageStudent').height() + 50 });
+                        $('#frontPageOverlay').css('min-height', $('#thankyouPageStudent').height() + 50);
+                        $('#frontPageOverlay').css('height', $('#thankyouPageStudent').height() + 66);
+                    }
+                }).error(function (response) {
+                    console.log('error');
+                    console.log(response);
+
+                    $('#contactInformationStudent2').hide();
+                    $('#studentError').show();
+                    $('#aboutUs').show();
+                    $('#howWorks').show();
+                    $(document).scrollTop(0);
+                    $('.navbar-nav').show();
+                });
+            }
+        });
+    </script>
+}

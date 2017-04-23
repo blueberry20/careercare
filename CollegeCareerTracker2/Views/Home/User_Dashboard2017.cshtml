@@ -1,0 +1,147 @@
+﻿@using CollegeCareerTracker2.CloudStorage.Parent;
+
+@using CollegeCareerTracker2.CloudStorage.Student;
+@using CollegeCareerTracker2.Helpers;
+
+
+@{
+    ParentClient tableStorage = new ParentClient();
+    StudentClient tableStorageStudent = new StudentClient(); 
+    ViewBag.Title = "User_Dashboard2017";
+}
+
+
+<div id="dashboardContainer">
+    <div id="userDashboard" class="container">
+        <h2>User Dashboard 2017</h2>
+        <h3>Parents</h3>
+        @{
+            List<Parent> parents = tableStorage.RetriveAllForPartition("Parent", new Parent());
+            if (parents != null && parents.Count != 0)
+            {
+                foreach (Parent parent in parents)
+                {
+                         <div class="record flexDiv">
+                            <div class="column">
+                                <div>Name: @parent.FirstName @parent.LastName</div>
+                                <div>Mobile phone: @parent.PhoneNumber</div>
+                                <div>Email: @parent.Email</div>
+                                <div># of students that will be participating: @parent.NumberOfStudents</div>
+                                <div>Children grades: @parent.StudentGradesArray</div>                           
+                                <div>Preference in terms: @parent.PaymentPreference</div>
+                            </div>
+
+                            <div class="column">
+                                <div>Aptitude Testing: @EnumUtility.GetStringValue(parent.Aptitude)</div>
+                                <div>Career Exploration: @EnumUtility.GetStringValue(parent.CareerExploration)</div>
+                                <div>Career Road Map Development: @EnumUtility.GetStringValue(parent.CareerRoadMapDevelopment)</div>
+                                <div>Student Achievements Archive: @EnumUtility.GetStringValue(parent.StudentAchievementArchive)</div>
+                                <div>College Selection Optimizer: @EnumUtility.GetStringValue(parent.CollegeSelectionOptimizer)</div>
+                                <div>College Admission Important Date Scheduler: @EnumUtility.GetStringValue(parent.CollegeAdmissionScheduler)</div>
+                                <div>Career Advancement Rewards Program: @EnumUtility.GetStringValue(parent.CareerRewards)</div>
+                                <div>Habit builder: @EnumUtility.GetStringValue(parent.HabitBuilder)</div>
+                            </div>
+                        </div>
+                }
+            } else
+            {
+                <div class="emptyRecord record flexDiv">
+                    No records yet
+                </div>
+            }
+
+
+            }
+        @*<div class="record flexDiv">
+            <div class="column">
+                <div>First name:</div>
+                <div>Last name:</div>
+                <div>Mobile phone:</div>
+                <div>Email:</div>
+                <div># of students that will be participating:</div>
+                <div>Child grade level:</div>
+                <div>Preference in terms:</div>
+            </div>
+            <div class="column">
+                <div>Aptitude Testing:</div>
+                <div>Career Exploration:</div>
+                <div>Career Road Map Development:</div>
+                <div>Student Achievements Archive:</div>
+                <div>College Selection Optimizer:</div>
+                <div>College Admission Important Date Scheduler:</div>
+                <div>Career Advancement Rewards Program:</div>
+                <div>Habit builder:</div>
+            </div>
+        </div>*@
+
+        <h3>Students</h3>
+
+        @{
+            List<Student> students = tableStorageStudent.RetriveAllForPartition("Student", new Student());
+            if (students != null && students.Count != 0)
+            {
+                foreach (Student student in students)
+                {
+                    <div class="record flexDiv">
+                        <div class="column">
+                            <div>Name: @student.FirstName @student.LastName</div>
+                            <div>Mobile phone: @student.PhoneNumber</div>
+                            <div>Email: @student.Email</div>
+                            <div>Grade level: @student.StudentGrade</div>
+                            <div>Parent name: @student.FirstParentFirstName</div>
+                            <div>Parent phone: @student.FirstParentPhoneNumber</div>
+                            <div>Parent email: @student.FirstParentEmail</div>
+                            <div>Parent name: @student.SecondParentFirstName</div>
+                            <div>Parent phone: @student.SecondParentPhoneNumber</div>
+                            <div>Parent email: @student.SecondParentEmail</div>
+                        </div>
+
+                        <div class="column">
+                            <div>Aptitude Testing: @EnumUtility.GetStringValue(student.Aptitude)</div>
+                            <div>Career Exploration: @EnumUtility.GetStringValue(student.CareerExploration)</div>
+                            <div>Career Road Map Development: @EnumUtility.GetStringValue(student.CareerRoadMapDevelopment)</div>
+                            <div>Student Achievements Archive: @EnumUtility.GetStringValue(student.StudentAchievementArchive)</div>
+                            <div>College Selection Optimizer: @EnumUtility.GetStringValue(student.CollegeSelectionOptimizer)</div>
+                            <div>College Admission Important Date Scheduler: @EnumUtility.GetStringValue(student.CollegeAdmissionScheduler)</div>
+                            <div>Career Advancement Rewards Program: @EnumUtility.GetStringValue(student.CareerRewards)</div>
+                            <div>Habit builder: @EnumUtility.GetStringValue(student.HabitBuilder)</div>
+                        </div>
+                    </div>
+                }
+            }
+            else
+            {
+                <div class="emptyRecord record flexDiv">
+                    No records yet
+                </div>
+            }
+
+
+        }
+
+        @*<div class="record flexDiv">
+            <div class="column">
+                <div>First name:</div>
+                <div>Last name:</div>
+                <div>Mobile phone:</div>
+                <div>Email:</div>
+                <div># of students that will be participating:</div>
+                <div>Child grade level:</div>
+                <div>Preference in terms:</div>
+            </div>
+            <div class="column">
+                <div>Aptitude Testing:</div>
+                <div>Career Exploration:</div>
+                <div>Career Road Map Development:</div>
+                <div>Student Achievements Archive:</div>
+                <div>College Selection Optimizer:</div>
+                <div>College Admission Important Date Scheduler:</div>
+                <div>Career Advancement Rewards Program:</div>
+                <div>Habit builder:</div>
+            </div>
+        </div>*@
+
+
+    </div>
+
+</div>
